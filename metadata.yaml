@@ -1,0 +1,6 @@
+name: astrbot_plugin_random_share
+display_name: 随机刷B站
+desc: 随机时间刷 B 站热门视频，图文分享到指定群或私聊
+version: 1.0.0
+author: QT-666
+repo: https://github.com/QT-666/astrbot-plugin-random-share

@@ -1,0 +1,82 @@
+{
+  "group_whitelist": {
+    "description": "允许发送的群号（留空则不发群）",
+    "type": "list",
+    "default": []
+  },
+  "private_whitelist": {
+    "description": "允许发送的私聊 QQ 号（留空则不发私聊）",
+    "type": "list",
+    "default": []
+  },
+  "weekday_max": {
+    "description": "周一到周四每天最多几条",
+    "type": "int",
+    "default": 2
+  },
+  "weekend_max": {
+    "description": "周五到周日每天最多几条",
+    "type": "int",
+    "default": 3
+  },
+  "weekday_start": {
+    "description": "周中时间窗开始（HH:MM）",
+    "type": "string",
+    "default": "16:00"
+  },
+  "weekend_start": {
+    "description": "周末时间窗开始（HH:MM）",
+    "type": "string",
+    "default": "12:00"
+  },
+  "daytime_end": {
+    "description": "白天段结束（HH:MM）",
+    "type": "string",
+    "default": "22:00"
+  },
+  "quiet_after": {
+    "description": "最晚发送时间（HH:MM，次日）",
+    "type": "string",
+    "default": "00:30"
+  },
+  "day_weight": {
+    "description": "单次时落在白天段的百分比",
+    "type": "int",
+    "default": 68
+  },
+  "group_daily_limit": {
+    "description": "每个群每天最多发几条（0 = 不限）",
+    "type": "int",
+    "default": 3
+  },
+  "cooldown_seconds": {
+    "description": "群内手动刷视频的冷却秒数",
+    "type": "int",
+    "default": 60
+  },
+  "min_duration_min": {
+    "description": "视频最短时长（分钟）",
+    "type": "int",
+    "default": 1
+  },
+  "max_duration_min": {
+    "description": "视频最长时长（分钟）",
+    "type": "int",
+    "default": 30
+  },
+  "ai_caption": {
+    "description": "是否让模型写一句吐槽（单独一条发送）",
+    "type": "bool",
+    "default": true
+  },
+  "caption_provider": {
+    "description": "写吐槽用的模型（留空用 deepseek-flash）",
+    "type": "string",
+    "default": ""
+  },
+  "blacklist": {
+    "description": "标题黑名单关键词",
+    "type": "list",
+    "default": ["直播回放", "广告", "恰饭"]
+  }
+}
